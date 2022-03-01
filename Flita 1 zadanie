@@ -1,53 +1,97 @@
 #include <stdio.h>
-int main()
-{
-  int i,j,n,p,k;
- k=1;
-  //задание 2 множеств
-  int a[10];
-  int arr[10];
-  //ввод элементов массива
-  printf("Введите n: ");
-  scanf("%d",&n);
-  for(i=0;i<n;i++)
-  {
-      scanf("%d",&a[i]);
-  }
-  for(i=0;i<n;i++)
-              {
-                  printf("%d",a[i]);
-              }
-  
- 
-  for(i=0;i<n;i++)
-      {
-          for(int j=0;j<n;j++)
-          {
-          if(a[i]==a[j])
-          {
-              k=0;
-              break;
-          }
-          }
-      }
-      if(k==1)
-     {
-                 printf("\n");
-             //удаление элементов массива
-            
-            for(i=n;i>0;i--)
-            {
-                a[i]=a[i-1];
-            }
-             //добавление элементов множества
-            scanf("%d",&p);
-            i=n++;
-            a[n]=p;
-      }
-      else
-      {
-          printf("Ne verno vvedeno mnojestvo");
-      }
-      return 0;
-}
 
+int main(void) {
+    int n, a[50], i;
+    int l, arr[50], k;
+    
+    //задание 1 множества 
+    printf("Введите количество элементов множества: "); 
+    scanf("%d", &n);
+    i=0;
+    
+    while(i < n)
+    {
+        printf("Введите элемент # %d => ", i+1);
+        scanf("%d", &a[i]);
+        i++;
+    }
+    for (i = 0; i < n; i++){
+        printf("%d  ", a[i]);
+    }
+    printf("\n");
+    printf("\n");
+    
+    
+    printf("Введите количество элементов множества: "); 
+    scanf("%d", &l);
+    l=0;
+    
+    while(k < l)
+    {
+        printf("Введите элемент # %d => ", k+1);
+        scanf("%d", &arr[k]);
+        k++;
+    }
+    
+    printf("Элементы множества #2: ");
+    for (k = 0; k < o; k++){
+        printf("%d  ", arr[k]);
+    }
+    printf("\n");
+    printf("\n");
+    
+    
+    int h,a1,a2;
+    
+   //удаление из множеств
+    printf("Введите номер элемента, удаляемого из множества ");
+    scanf("%d", &a1);
+    h= a1-1;
+    a[h]=0;
+    printf("\n");
+    for (i = 0; i < n; i++){
+    printf("%d  ", a[i]);
+    }
+    printf("\n");
+    printf("\n");
+    //2 мн
+    printf("Введите номер элемента, удаляемого из множества ");
+    scanf("%d", &a2);
+    h = a2-1;
+    arr[h]=0;
+    printf("\n");
+    for (k = 0; k < o; k++){
+        printf("%d  ", arr[k]);
+    }
+    printf("\n");
+    printf("\n");
+
+int u1,c1,u2,s2;
+//замена элементов
+    printf("Введите номер элемента, заменяемого в множестве ");
+    scanf("%d", &u1);
+    printf("Введите новое значение заменяемого элемента ");
+    scanf("%d", &c1);
+    l=c1-1;
+    a[l]=c1;
+    printf("\n");
+    for (i = 0; i < n; i++){
+    printf("%d  ", a[i]);
+    }
+   
+    printf("\n");
+    
+   
+    printf("Введите номер элемента, заменяемого в множестве ");
+    scanf("%d", &u2);
+    printf("Введите новое значение заменяемого элемента ");
+    scanf("%d", &c2);
+    l=u2-1;
+    arr[l]=c2;
+    for (k = 0; k < o; k++){
+        printf("%d  ", mn2[k]);
+    }
+ printf("\n");
+ printf("\n");
+    return 0;
+}
