@@ -7,34 +7,32 @@ int main(void) {
     //задание 1 множества 
     printf("Введите количество элементов множества: "); 
     scanf("%d", &n);
-    i=0;
     
-    while(i < n)
+    for(i=0;i<n;i++)
     {
-        printf("Введите элемент # %d => ", i+1);
         scanf("%d", &a[i]);
-        i++;
     }
-    for (i = 0; i < n; i++){
+    for (i = 0; i < n; i++)
+    {
         printf("%d  ", a[i]);
     }
     printf("\n");
     printf("\n");
     
-    
+    //2
     printf("Введите количество элементов множества: "); 
     scanf("%d", &l);
     l=0;
     
-    while(k < l)
+   for(k=0;k<l;k++)
     {
-        printf("Введите элемент # %d => ", k+1);
         scanf("%d", &arr[k]);
         k++;
     }
     
-    printf("Элементы множества #2: ");
-    for (k = 0; k < o; k++){
+    printf("Элементы множества: ");
+    for (k = 0; k < l; k++)
+    {
         printf("%d  ", arr[k]);
     }
     printf("\n");
@@ -44,6 +42,7 @@ int main(void) {
     int h,a1,a2;
     
    //удаление из множеств
+   //1 мн
     printf("Введите номер элемента, удаляемого из множества ");
     scanf("%d", &a1);
     h= a1-1;
@@ -60,7 +59,7 @@ int main(void) {
     h = a2-1;
     arr[h]=0;
     printf("\n");
-    for (k = 0; k < o; k++){
+    for (k = 0; k < l; k++){
         printf("%d  ", arr[k]);
     }
     printf("\n");
@@ -88,8 +87,8 @@ int u1,c1,u2,s2;
     scanf("%d", &c2);
     l=u2-1;
     arr[l]=c2;
-    for (k = 0; k < o; k++){
-        printf("%d  ", mn2[k]);
+    for (k = 0; k < l; k++){
+        printf("%d  ", arr[k]);
     }
  printf("\n");
  printf("\n");
