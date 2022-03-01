@@ -2,21 +2,21 @@
 int main()
 {
   int i,j,n,p,k;
-  bool fl;
-  fl=true;
+ k=1;
   //задание 2 множеств
   int a[10];
   int arr[10];
   //ввод элементов массива
+  printf("Введите n: ");
   scanf("%d",&n);
-  i=0;
-  while(i<n)
+  for(i=0;i<n;i++)
   {
       scanf("%d",&a[i]);
-      a[j]=a[i];
-      i++;
   }
-  
+  for(i=0;i<n;i++)
+              {
+                  printf("%d",a[i]);
+              }
   
  
   for(i=0;i<n;i++)
@@ -25,26 +25,14 @@ int main()
           {
           if(a[i]==a[j])
           {
-              fl=false;
-              printf("Ne verno vvedeno mnojestvo");
+              k=0;
               break;
           }
           }
       }
-      if(fl==true)
-      {
-              //вывод элементов множества
-              for(i=0;i<n;i++)
-              {
-                  printf("%d",a[i]);
-              }
+      if(k==1)
+     {
                  printf("\n");
-				 //удаление элементов массива
-            scanf("%d",&k);
-            for(i=n;i>=k;i--)
-            {
-                a[i]=a[i-1];
-            }
              //удаление элементов массива
             
             for(i=n;i>0;i--)
@@ -56,5 +44,10 @@ int main()
             i=n++;
             a[n]=p;
       }
+      else
+      {
+          printf("Ne verno vvedeno mnojestvo");
+      }
       return 0;
 }
+
