@@ -1,7 +1,7 @@
 #include <stdio.h>
-void main()
+int main()
 {
-  int i,n,p,k;
+  int i,j,n,p,k;
   bool fl;
   fl=true;
   //задание 2 множеств
@@ -36,7 +36,7 @@ void main()
               //вывод элементов множества
               for(i=0;i<n;i++)
               {
-                  printf("%d",&a[i]);
+                  printf("%d",a[i]);
               }
                  printf("\n");
 				 //удаление элементов массива
@@ -54,7 +54,7 @@ void main()
              //добавление элементов множества
             scanf("%d",&p);
             i=n++;
-            a[i]=p;
+            a[n]=p;
       }
       return 0;
 }
