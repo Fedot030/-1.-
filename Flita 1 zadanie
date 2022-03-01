@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main()
+{
+  int i,j,n,p,k;
+  bool fl;
+  fl=true;
+  //задание 2 множеств
+  int a[10];
+  int arr[10];
+  //ввод элементов массива
+  scanf("%d",&n);
+  i=0;
+  while(i<n)
+  {
+      scanf("%d",&a[i]);
+      a[j]=a[i];
+      i++;
+  }
+  
+  
+ 
+  for(i=0;i<n;i++)
+      {
+          for(int j=0;j<n;j++)
+          {
+          if(a[i]==a[j])
+          {
+              fl=false;
+              printf("Ne verno vvedeno mnojestvo");
+              break;
+          }
+          }
+      }
+      if(fl==true)
+      {
+              //вывод элементов множества
+              for(i=0;i<n;i++)
+              {
+                  printf("%d",a[i]);
+              }
+                 printf("\n");
+				 //удаление элементов массива
+            scanf("%d",&k);
+            for(i=n;i>=k;i--)
+            {
+                a[i]=a[i-1];
+            }
+             //удаление элементов массива
+            
+            for(i=n;i>0;i--)
+            {
+                a[i]=a[i-1];
+            }
+             //добавление элементов множества
+            scanf("%d",&p);
+            i=n++;
+            a[n]=p;
+      }
+      return 0;
+}
