@@ -55,6 +55,6 @@ int main()
             scanf("%d",&p);
             i=n++;
             a[n]=p;
-      }
+      }//
       return 0;
 }
